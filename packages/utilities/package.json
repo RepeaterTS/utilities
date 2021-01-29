@@ -1,7 +1,7 @@
 {
 	"name": "@repeaterts/utilities",
 	"version": "1.0.1",
-	"description": "Common utilities for @RepeaterTS",
+	"description": "Common JS Utilities for @RepeaterTS",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
 	"browser": "dist/index.umd.js",

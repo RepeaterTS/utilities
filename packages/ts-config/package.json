@@ -1,7 +1,7 @@
 {
   "name": "@repeaterts/ts-config",
   "version": "1.0.2",
-  "description": "Shareable Typescript Configuration for @repeaterts",
+  "description": "Shareable Typescript Configuration for @RepeaterTS",
   "main": "tsconfig.json",
   "author": "@repeaterts",
   "license": "MIT",

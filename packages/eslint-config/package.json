@@ -1,7 +1,7 @@
 {
 	"name": "@repeaterts/eslint-config",
 	"version": "1.0.1",
-	"description": "Standard Sharable ESLint for RepeaterTS in TS.",
+	"description": "Standard Sharable ESLint for RepeaterTS in TS",
 	"main": "dist/index.js",
 	"author": "@repeaterts",
 	"license": "MIT",
