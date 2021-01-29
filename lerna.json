@@ -1,0 +1,23 @@
+{
+	"packages": ["packages/*"],
+	"version": "independent",
+	"npmClient": "yarn",
+	"useWorkspaces": true,
+	"command": {
+		"publish": {
+			"conventionalCommits": true,
+			"push": true
+		},
+		"version": {
+			"allowBranch": "master",
+			"conventionalCommits": true,
+			"push": true,
+			"createRelease": "github",
+			"message": "chore(release): publish"
+		},
+		"create": {
+			"license": "MIT",
+			"keywords": ["repeaterts", "bot", "typescript", "ts", "yarn", "minecraft", "repeater", "standalone"]
+		}
+	}
+}

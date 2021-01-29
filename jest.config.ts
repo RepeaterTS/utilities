@@ -6,10 +6,11 @@ export default async (): Promise<Config.InitialOptions> => ({
 	preset: 'ts-jest',
 	testEnvironment: 'node',
 	testRunner: 'jest-circus/runner',
-	testMatch: ['<rootDir>/tests/**/*.test.ts'],
+	testMatch: ['<rootDir>/packages/**/tests/**/*.test.ts', '<rootDir>/packages/**/tests/**/*.test.js'],
+	setupFilesAfterEnv: ['<rootDir>/packages/snowflake/tests/jest.setup.ts'],
 	globals: {
 		'ts-jest': {
-			tsconfig: '<rootDir>/tests/tsconfig.json'
+			tsconfig: '<rootDir>/tsconfig.json'
 		}
-	}
+	},
 });
