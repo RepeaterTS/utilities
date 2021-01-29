@@ -1,6 +1,6 @@
 {
   "name": "@repeaterts/ts-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shareable Typescript Configuration for @repeaterts",
   "main": "tsconfig.json",
   "author": "@repeaterts",
@@ -28,12 +28,12 @@
     "node": ">=12",
     "npm": ">=6"
   },
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/repeaterts/utilities.git",
-		"directory": "packages/ts-config"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/repeaterts/utilities.git",
+    "directory": "packages/ts-config"
   },
   "publishConfig": {
-		"access": "public"
-	}
+    "access": "public"
+  }
 }
