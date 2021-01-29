@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.5](https://github.com/repeaterts/utilities/compare/@repeaterts/ts-config@1.0.4...@repeaterts/ts-config@1.0.5) (2021-01-29)
+
+**Note:** Version bump only for package @repeaterts/ts-config
+
+
+
+
+
 ## [1.0.4](https://github.com/repeaterts/utilities/compare/@repeaterts/ts-config@1.0.3...@repeaterts/ts-config@1.0.4) (2021-01-29)
 
 **Note:** Version bump only for package @repeaterts/ts-config
