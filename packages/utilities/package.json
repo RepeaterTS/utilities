@@ -1,0 +1,43 @@
+{
+  "name": "@repeaterts/utilities",
+  "version": "1.0.0",
+  "description": "Common utilities for @RepeaterTS",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"browser": "dist/index.umd.js",
+	"unpkg": "dist/index.umd.js",
+	"types": "dist/index.d.ts",
+  "author": "@repeaterts",
+  "license": "MIT",
+  "exports": {
+		"import": "./dist/index.mjs",
+		"require": "./dist/index.js"
+  },
+  "homepage": "https://github.com/repeaterts/utilities/tree/master/packages/utilities",
+	"scripts": {
+		"test": "jest",
+		"lint": "eslint src tests --ext ts --fix -c ../../.eslintrc",
+		"build": "rollup -c rollup.config.ts",
+		"start": "yarn build -w",
+		"prepublishOnly": "yarn build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/repeaterts/utilities.git",
+		"directory": "packages/utilities"
+	},
+	"files": [
+		"dist",
+		"!dist/*.tsbuildinfo"
+	],
+	"engines": {
+		"node": ">=12",
+		"npm": ">=6"
+  },
+  "bugs": {
+		"url": "https://github.com/repeaterts/utilities/issues"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}
