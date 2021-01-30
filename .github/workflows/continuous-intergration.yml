@@ -50,6 +50,8 @@ jobs:
           key: ${{ runner.os }}-14-${{ hashFiles('**/yarn.lock') }}
       - name: Install Dependencies
         run: yarn --ignore-scripts --frozen-lockfile
+      - name: Build ESLint
+        run: yarn tsc -b packages/eslint-config
       - name: Run ESLint
         run: yarn lint --fix=false
 
@@ -72,6 +74,8 @@ jobs:
           key: ${{ runner.os }}-14-${{ hashFiles('**/yarn.lock') }}
       - name: Install Dependencies
         run: yarn --frozen-lockfile
+      - name: Build Utilities
+        run: yarn workspace @repeaterts/utilities build
       - name: Run tests
         run: yarn test --coverage
       - name: Store code coverage report
@@ -99,7 +103,7 @@ jobs:
           key: ${{ runner.os }}-14-${{ hashFiles('**/yarn.lock') }}
       - name: Install Dependencies
         run: yarn --ignore-scripts --frozen-lockfile
-      - name: Build Code
+      - name: Compile Projects
         run: yarn build
 
   Upload_Coverage_Report:
