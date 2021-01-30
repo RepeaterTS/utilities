@@ -2,7 +2,7 @@
 
 # RepeaterTS Utilities
 
-** Common Utilities for RepeaterTS **
+**Common Utilities for RepeaterTS**
 
 [![GitHub](https://img.shields.io/github/license/repeaterts/utilities)](https://github.com/repeaterts/utilities/blob/master/LICENSE.md)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/RepeaterTS/utilities.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/RepeaterTS/utilities/alerts/)
