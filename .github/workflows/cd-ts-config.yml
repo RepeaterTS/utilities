@@ -6,7 +6,7 @@ on:
       - master
     paths:
       - packages/ts-config/**
-      - LICENSE.md
+      - LICENSE
       - package.json
       - .github/workflows/cd-ts-config.yml
 jobs:
@@ -68,7 +68,7 @@ jobs:
 
           echo -e "\n# Move the generated code to the newly-checked-out repo, to be committed and pushed"
           rsync -vaI package.json out/
-          rsync -vaI ../../LICENSE.md out/
+          rsync -vaI ../../LICENSE out/
           rsync -vaI README.md out/
           rsync -vaI src/tsconfig.json out/
 

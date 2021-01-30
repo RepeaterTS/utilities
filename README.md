@@ -4,7 +4,7 @@
 
 **Common Utilities for RepeaterTS**
 
-[![GitHub](https://img.shields.io/github/license/repeaterts/utilities)](https://github.com/repeaterts/utilities/blob/master/LICENSE.md)
+[![GitHub](https://img.shields.io/github/license/repeaterts/utilities)](https://github.com/repeaterts/utilities/blob/master/LICENSE)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/RepeaterTS/utilities.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/RepeaterTS/utilities/alerts/)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/RepeaterTS/utilities.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/RepeaterTS/utilities/context:javascript)
 [![Coverage Status](https://coveralls.io/repos/github/RepeaterTS/utilities/badge.svg?branch=master)](https://coveralls.io/github/RepeaterTS/utilities?branch=master)
