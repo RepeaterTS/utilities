@@ -1,6 +1,6 @@
-import { deepClone } from './deepClone';
-import { isObject } from './isObject';
-import type { DeepRequired } from './utilityTypes';
+import { deepClone } from "./deepClone";
+import { isObject } from "./isObject";
+import type { DeepRequired } from "./utilityTypes";
 
 // eslint-disable-next-line @typescript-eslint/consistent-type-definitions, @typescript-eslint/ban-types
 type NonNullObject = {};
@@ -43,19 +43,29 @@ type NonNullObject = {};
  * mergeDefault(base, overwrites) // { a: { b: 5 } };
  * ```
  */
-export function mergeDefault<A extends NonNullObject, B extends Partial<A>>(base: A, overwrites?: B): DeepRequired<A & B> {
-	// If no overwrites are specified then deep clone the base
-	if (!overwrites) return deepClone(base) as DeepRequired<A & B>;
+export function mergeDefault<A extends NonNullObject, B extends Partial<A>>(
+  base: A,
+  overwrites?: B
+): DeepRequired<A & B> {
+  // If no overwrites are specified then deep clone the base
+  if (!overwrites) return deepClone(base) as DeepRequired<A & B>;
 
-	for (const [baseKey, baseValue] of Object.entries(base)) {
-		const overwritesValueAtBaseKey = Reflect.get(overwrites, baseKey);
+  for (const [baseKey, baseValue] of Object.entries(base)) {
+    const overwritesValueAtBaseKey = Reflect.get(overwrites, baseKey);
 
-		if (typeof overwritesValueAtBaseKey === 'undefined') {
-			Reflect.set(overwrites, baseKey, deepClone(baseValue));
-		} else if (isObject(overwritesValueAtBaseKey)) {
-			Reflect.set(overwrites, baseKey, mergeDefault((baseValue ?? {}) as NonNullObject, overwritesValueAtBaseKey));
-		}
-	}
+    if (typeof overwritesValueAtBaseKey === "undefined") {
+      Reflect.set(overwrites, baseKey, deepClone(baseValue));
+    } else if (isObject(overwritesValueAtBaseKey)) {
+      Reflect.set(
+        overwrites,
+        baseKey,
+        mergeDefault(
+          (baseValue ?? {}) as NonNullObject,
+          overwritesValueAtBaseKey
+        )
+      );
+    }
+  }
 
-	return overwrites as DeepRequired<A & B>;
+  return overwrites as DeepRequired<A & B>;
 }

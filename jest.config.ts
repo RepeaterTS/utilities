@@ -15,4 +15,9 @@ export default async (): Promise<Config.InitialOptions> => ({
       tsconfig: "<rootDir>/tsconfig.json",
     },
   },
+  coveragePathIgnorePatterns: [
+    "<rootDir>/packages/utilities/tests/util/common.ts",
+    "<rootDir>/packages/utilities/dist/index.js",
+    "<rootDir>/packages/utilities/src/index.ts",
+  ],
 });
