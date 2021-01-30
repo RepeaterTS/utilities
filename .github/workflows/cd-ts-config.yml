@@ -3,7 +3,7 @@ name: Continuous Delivery - ts-config
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - packages/ts-config/**
       - LICENSE.md

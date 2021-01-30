@@ -3,7 +3,7 @@ name: Continuous Delivery - eslint-config
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - packages/eslint-config/**
       - LICENSE.md

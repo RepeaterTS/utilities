@@ -3,7 +3,7 @@ name: Continuous Delivery - utilities
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - packages/utilities/**
       - LICENSE.md
