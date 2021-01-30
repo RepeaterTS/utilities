@@ -1,18 +1,19 @@
 {
 	"out": "./docs/",
 	"readme": "./README.md",
-	"name": "@repeaterts/utilities",
+	"name": "RepeaterTS Utilities",
 	"exclude": [
 		"**/node_modules/**",
 		"**/dist/**",
 		"**/*.test.ts",
 		"packages/**/tests/**",
 		"**/*.js",
-		"**/rollup.config.ts",
 		"**/jest.config.ts",
-		"packages/utilities/src/index.ts"
+		"**/rollup.config.ts"
 	],
-	"entryPoints": ["packages/"],
+	"mode": "modules",
 	"excludeExternals": true,
+	"excludeNotExported": true,
+	"stripInternal": true,
 	"tsconfig": "./tsconfig.json"
 }
