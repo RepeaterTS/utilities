@@ -1,0 +1,46 @@
+{
+	"name": "@repeaterts/eslint-config",
+	"version": "1.0.5",
+	"description": "Standard Sharable ESLint for RepeaterTS in TS",
+	"main": "dist/index.js",
+	"author": "@repeaterts",
+	"license": "MIT",
+	"types": "dist/index.d.ts",
+	"exports": {
+		"import": "./dist/index.js",
+		"require": "./dist/index.js"
+	},
+	"scripts": {
+		"test": "jest",
+		"prelint": "yarn test && yarn build",
+		"lint": "eslint src tests --ext ts --fix -c dist/index.js",
+		"build": "tsc -b src",
+		"prepublishOnly": "yarn build"
+	},
+	"homepage": "https://github.com/repeaterts/utilities/tree/master/packages/eslint-config",
+	"peerDependencies": {
+		"@typescript-eslint/eslint-plugin": "4.x",
+		"@typescript-eslint/parser": "4.x",
+		"eslint": "7.x",
+		"eslint-config-prettier": "7.x",
+		"eslint-plugin-prettier": "3.x",
+		"prettier": "2.x",
+		"typescript": "4.x"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/repeaterts/utilities.git",
+		"directory": "packages/eslint-config"
+	},
+	"files": [
+		"dist",
+		"!dist/*.tsbuildinfo"
+	],
+	"engines": {
+		"node": ">=12",
+		"npm": ">=6"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}
