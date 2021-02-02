@@ -3,4 +3,5 @@ export * from "./library/deepClone";
 export * from "./library/isObject";
 export * from "./library/isPrimitive";
 export * from "./library/utilityTypes";
+export * from "./library/chunk";
 //# sourceMappingURL=index.d.ts.map
