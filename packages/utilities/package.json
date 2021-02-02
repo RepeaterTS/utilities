@@ -1,6 +1,6 @@
 {
 	"name": "@repeaterts/utilities",
-	"version": "1.0.9",
+	"version": "1.0.10",
 	"description": "Common JS Utilities for @RepeaterTS",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
